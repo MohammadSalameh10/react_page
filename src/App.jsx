@@ -13,10 +13,12 @@ export default function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<StartBootsraps />} ></Route>
-        <Route path="/Portfolio" element={<Portfolio />} ></Route>
-        <Route path="/About" element={<About />} ></Route>
-        <Route path="/Contact" element={<Contact />} ></Route>
+        <Route path="/" element={<StartBootsraps />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="*" element={<h2>Not found</h2>} />
+        
       </Routes>
       
       <Footer />
